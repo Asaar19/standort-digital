@@ -24,7 +24,10 @@
 
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+=======
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
 
     <!-- <link rel="stylesheet" href="imapsync_form.css"> -->
     <!-- <link rel="stylesheet" href="../S/style.css" type="text/css" /> -->
@@ -32,12 +35,15 @@
 
     <link rel="license" href="https://imapsync.lamiral.info/NOLIMIT">
 
+<<<<<<< HEAD
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 
+=======
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- <noscript>
@@ -54,17 +60,23 @@
                         yellow: '#FDBB42',
                         orange: '#EC5039',
                         gray: '#4E4E4E',
+<<<<<<< HEAD
                         borderColor: '#4559EB', // Border color directly
+=======
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
                     },
                     maxWidth: {
                         DEFAULT: '1120px', // Add a default max-width
                     },
+<<<<<<< HEAD
                     backgroundImage: {
                         'hero-pattern': "url('./bg.jpg')",
                     },
                     fontFamily: {
                         inter: ['"Inter", sans-serif'],
                     },
+=======
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
                 },
             },
         }
@@ -73,6 +85,7 @@
 
 </head>
 
+<<<<<<< HEAD
 <body class="bg-hero-pattern bg-cover bg-center bg-repeat font-inter">
     <header class="absolute w-full">
         <div class="lg:max-w mx-auto py-4">
@@ -83,6 +96,18 @@
                 </div>
                 <!-- Right Column: Two Divs -->
                 <div class="flex space-x-2 mt-2 md:mt-0 font-bold">
+=======
+<body>
+    <header class="lg:max-w mx-auto">
+        <div class="py-4">
+            <div class="flex flex-wrap justify-between items-center">
+                <!-- Left Column: Logo -->
+                <div class="text-2xl font-bold text-blue-500">
+                    <img src="./logo.png" alt="Standfort Digital" class="w-60">
+                </div>
+                <!-- Right Column: Two Divs -->
+                <div class="flex space-x-2 mt-2 md:mt-0 text-orange font-bold">
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
                     <div class="">DE</div>
                     <div class="">/ EN</div>
                 </div>
@@ -90,22 +115,38 @@
         </div>
     </header>
 
+<<<<<<< HEAD
     <div class="text-center text-2xl font-bold pt-52 pb-20">
         <h1 class="text-5xl mb-4">Imapsync Online Unlimited</h1>
         <p class="text-lg font-normal leading-relaxed">Copy/synchronize a complete Mailbox to another, without
+=======
+    <div class="text-center text-2xl font-bold text-white bg-gradient-to-b from-primary to-secondary py-20">
+        <h1 class="text-4xl mb-4">Imapsync Online Unlimited</h1>
+        <p class="text-base font-normal leading-relaxed">Copy/synchronize a complete Mailbox to another, without
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
             duplicates!</p>
     </div>
 
 
+<<<<<<< HEAD
     <!-- bg-gradient-to-b from-white to-primary  -->
 
     <div class="py-20 lg:max-w mx-auto ">
+=======
+
+
+    <div class="py-20 lg:max-w mx-auto">
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
         <form id="form" action="/cgi-bin/imapsync" method="post" autocomplete="on" class="space-y-6">
             <!-- Form Row -->
             <div id="form_row"
                 class="flex flex-col lg:flex-row justify-between space-y-6 lg:space-y-0 lg:space-x-8 mb-14">
                 <!-- Source Mailbox -->
+<<<<<<< HEAD
                 <div id="account1" class="w-full lg:w-[48%] lg:py-14 lg:px-10 rounded-lg shadow-2xl">
+=======
+                <div id="account1" class="w-full lg:w-[48%] border border-gray lg:py-14 lg:px-6 rounded-lg shadow-xl">
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
                     <fieldset>
                         <legend class="text-center text-2xl font-bold mb-8">IMAP Source Mailbox</legend>
                         <!-- <div class="relative mb-4">
@@ -114,6 +155,7 @@
                         </div> -->
                         <div class="relative mb-4">
                             <div class="w-full">
+<<<<<<< HEAD
                                 <label for="user1" class="text-sm"><strong>Login </strong>(usually an email
                                     address)</label>
                                 <div class="flex items-center">
@@ -121,22 +163,40 @@
                                         class="w-full mt-1 p-3 rounded-md border border-borderColor py-3 placeholder:text-grey focus:none sm:text-sm/6 focus-visible:outline-none">
                                     <i class="fas fa-info-circle text-primary absolute right-2 text-gray-500 ml-2 cursor-pointer"
                                         title="It is usually an email address or its left part before @"></i>
+=======
+                                <label for="user1"><strong>Login </strong>(usually an email address)</label>
+                                <div class="flex items-center">
+                                    <input type="text" id="user1" name="user1" placeholder="Enter login name"
+                                    class="w-full mt-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-500">
+                                    <i class="fas fa-info-circle text-primary absolute right-2 text-gray-500 ml-2 cursor-pointer"
+                                    title="It is usually an email address or its left part before @"></i>
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
                                 </div>
                             </div>
                         </div>
                         <div class="relative mb-4 ">
                             <div class="w-full">
+<<<<<<< HEAD
                                 <label for="password1" class="text-sm"><strong>Password</strong></label>
                                 <div class="flex items-center">
                                     <input type="password" id="password1" name="password1" placeholder="Enter password"
                                         class="w-full mt-1 p-3 rounded-md border border-borderColor py-3 placeholder:text-grey focus:none sm:text-sm/6 focus-visible:outline-none">
                                     <i class="fas fa-info-circle text-primary absolute top-13 right-2 text-gray-500 ml-2 cursor-pointer"
                                         title="Passwords are not stored on the server"></i>
+=======
+                                <label for="password1"><strong>Password</strong></label>
+                                <div class="flex items-center">
+                                    <input type="password" id="password1" name="password1" placeholder="Enter password"
+                                    class="w-full mt-1 p-3 border border-gray rounded-lg focus:outline-none focus:ring focus:ring-blue-500">
+                                    <i class="fas fa-info-circle text-primary absolute top-13 right-2 text-gray-500 ml-2 cursor-pointer"
+                                    title="Passwords are not stored on the server"></i>
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
                                 </div>
                             </div>
                         </div>
                         <div class="relative mb-4">
                             <div class="w-full">
+<<<<<<< HEAD
                                 <label for="host1" class="text-sm"><strong>IMAP Server hostname</strong> (or its IP
                                     address)</label>
                                 <div class="flex items-center">
@@ -150,6 +210,20 @@
                                         <option value="outlook.office365.com"></option>
                                     </datalist>
                                 </div>
+=======
+                                <label for="host1"><strong>IMAP Server hostname</strong> (or its IP address)</label>
+                                <div class="flex items-center">
+                                <input type="text" id="host1" name="host1" list="servers1"
+                                    placeholder="Enter IMAP source server name or IP address"
+                                    class="w-full mt-1 p-3 pr-6 border border-gray rounded-lg focus:outline-none focus:ring focus:ring-blue-500">
+                                <i class="fas fa-info-circle text-primary absolute right-2 text-gray-500 ml-2 cursor-pointer"
+                                    title="IMAP transfers are done with encryption if the servers support it."></i>
+                                <datalist id="servers1">
+                                    <option value="imap.gmail.com"></option>
+                                    <option value="outlook.office365.com"></option>
+                                </datalist>
+                            </div>
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
                             </div>
                         </div>
                         <!-- <div class="scripton mb-3">
@@ -160,12 +234,21 @@
                         <div class="subFolderDiv hidden">
                             <div class="relative mb-4">
                                 <div class="w-full">
+<<<<<<< HEAD
                                     <label for="subfolder1" class="text-sm"><strong>Sub-folder</strong></label>
                                     <div class="flex items-center">
                                         <input type="text" id="subfolder1" placeholder="Enter sub-folder name"
                                             class="w-full mt-1 p-3 rounded-md border border-borderColor py-3 placeholder:text-grey focus:none sm:text-sm/6 focus-visible:outline-none">
                                         <i class="fas fa-info-circle text-primary absolute right-2 text-gray-500 ml-2 cursor-pointer"
                                             title="A subfolder where all the source mailbox comes from."></i>
+=======
+                                    <label for="subfolder1"><strong>Sub-folder</strong></label>
+                                    <div class="flex items-center">
+                                    <input type="text" id="subfolder1" placeholder="Enter sub-folder name"
+                                        class="w-full mt-1 p-3 pr-6 border border-gray rounded-lg focus:outline-none focus:ring focus:ring-blue-500">
+                                    <i class="fas fa-info-circle text-primary absolute right-2 text-gray-500 ml-2 cursor-pointer"
+                                        title="A subfolder where all the source mailbox comes from."></i>
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
                                     </div>
                                 </div>
                             </div>
@@ -175,11 +258,17 @@
                 </div>
 
                 <!-- Destination Mailbox -->
+<<<<<<< HEAD
                 <div id="account2" class="w-full lg:w-[48%] p-6 lg:py-14 lg:px-10 rounded-lg shadow-2xl">
+=======
+                <div id="account2"
+                    class="w-full lg:w-[48%] border border-gray p-6 lg:py-14 lg:px-6 rounded-lg shadow-xl">
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
                     <fieldset>
                         <legend class="text-center text-2xl font-bold mb-8">IMAP Destination Mailbox</legend>
                         <div class="relative mb-4">
                             <div class="w-full">
+<<<<<<< HEAD
                                 <label for="user2" class="text-sm"><strong>Login </strong>(usually an email
                                     address)</label>
                                 <div class="flex items-center">
@@ -187,22 +276,40 @@
                                         class="w-full mt-1 p-3 rounded-md border border-borderColor py-3 placeholder:text-grey focus:none sm:text-sm/6 focus-visible:outline-none">
                                     <i class="fas fa-info-circle text-primary absolute right-2 text-gray-500 ml-2 cursor-pointer"
                                         title="It is usually an email address or its left part before @"></i>
+=======
+                                <label for="user2"><strong>Login </strong>(usually an email address)</label>
+                                <div class="flex items-center">
+                                <input type="text" id="user2" name="user2" placeholder="Enter login name"
+                                    class="w-full mt-1 p-3 border border-gray rounded-lg focus:outline-none focus:ring focus:ring-blue-500">
+                                    <i class="fas fa-info-circle text-primary absolute right-2 text-gray-500 ml-2 cursor-pointer"
+                                    title="It is usually an email address or its left part before @"></i>
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
                                 </div>
                             </div>
                         </div>
                         <div class="relative mb-4">
                             <div class="w-full">
+<<<<<<< HEAD
                                 <label for="password2" class="text-sm"><strong>Password</strong></label>
                                 <div class="flex items-center">
                                     <input type="password" id="password2" name="password2" placeholder="Enter password"
                                         class="w-full mt-1 p-3 rounded-md border border-borderColor py-3 placeholder:text-grey focus:none sm:text-sm/6 focus-visible:outline-none">
                                     <i class="fas fa-info-circle text-primary absolute right-2 text-gray-500 ml-2 cursor-pointer"
                                         title="Passwords are not stored on the server"></i>
+=======
+                                <label for="password2"><strong>Password</strong></label>
+                                <div class="flex items-center">
+                                <input type="password" id="password2" name="password2" placeholder="Enter password"
+                                    class="w-full mt-1 p-3 border border-gray rounded-lg focus:outline-none focus:ring focus:ring-blue-500">
+                                    <i class="fas fa-info-circle text-primary absolute right-2 text-gray-500 ml-2 cursor-pointer"
+                                    title="Passwords are not stored on the server"></i>
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
                                 </div>
                             </div>
                         </div>
                         <div class="relative mb-4">
                             <div class="w-full">
+<<<<<<< HEAD
                                 <label for="host2" class="text-sm"><strong>IMAP Server hostname</strong> (or its IP
                                     address)</label>
                                 <div class="flex items-center">
@@ -216,6 +323,20 @@
                                         <option value="outlook.office365.com"></option>
                                     </datalist>
                                 </div>
+=======
+                                <label for="host2"><strong>IMAP Server hostname</strong> (or its IP address)</label>
+                                <div class="flex items-center">
+                                <input type="text" id="host2" name="host2" list="servers2"
+                                    placeholder="Enter IMAP destination server name or IP address"
+                                    class="w-full mt-1 p-3 pr-6 border border-gray rounded-lg focus:outline-none focus:ring focus:ring-blue-500">
+                                    <i class="fas fa-info-circle text-primary absolute right-2 text-gray-500 ml-2 cursor-pointer"
+                                    title="IMAP transfers are done with encryption if the servers support it."></i>
+                                <datalist id="servers2">
+                                    <option value="imap.gmail.com"></option>
+                                    <option value="outlook.office365.com"></option>
+                                </datalist>
+                            </div>
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
                             </div>
                         </div>
                         <!-- <div class="scripton mb-3">
@@ -226,12 +347,21 @@
                         <div class="subFolderDiv hidden">
                             <div class="relative mb-4">
                                 <div class="w-full">
+<<<<<<< HEAD
                                     <label for="subfolder2" class="text-sm"><strong>Sub-folder</strong></label>
                                     <div class="flex items-center">
                                         <input type="text" id="subfolder2" placeholder="Enter sub-folder name"
                                             class="w-full mt-1 p-3 rounded-md border border-borderColor py-3 placeholder:text-grey focus:none sm:text-sm/6 focus-visible:outline-none">
                                         <i class="fas fa-info-circle text-primary absolute right-2 text-gray-500 ml-2 cursor-pointer"
                                             title="A subfolder where all the source mailbox will go."></i>
+=======
+                                    <label for="subfolder2"><strong>Sub-folder</strong></label>
+                                    <div class="flex items-center">
+                                    <input type="text" id="subfolder2" placeholder="Enter sub-folder name"
+                                        class="w-full mt-1 p-3 border border-gray rounded-lg focus:outline-none focus:ring focus:ring-blue-500">
+                                    <i class="fas fa-info-circle text-primary absolute right-2 text-gray-500 ml-2 cursor-pointer"
+                                        title="A subfolder where all the source mailbox will go."></i>
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
                                     </div>
                                 </div>
                             </div>
@@ -243,11 +373,19 @@
             <!-- Buttons -->
             <div class="flex justify-center space-x-4 mt-6">
                 <button type="button"
+<<<<<<< HEAD
                     class="bg-gray py-2 px-6 hover:bg-primary text-sm text-white rounded-lg toggleExtraParameters">
                     Show / Hide extra parameters
                     <i class="fas fa-eye-slash ml-1 fa-xs"></i>
                 </button>
                 <button type="button" class="bg-gray hover:bg-primary text-sm text-white py-2 px-6 rounded-lg">
+=======
+                    class="bg-gray py-2 px-6 hover:bg-primary text-white rounded-lg toggleExtraParameters">
+                    Show / Hide extra parameters
+                    <i class="fas fa-eye-slash ml-1 fa-xs"></i>
+                </button>
+                <button type="button" class="bg-gray hover:bg-primary text-white py-2 px-6 rounded-lg">
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
                     Swap Source Destination
                     <i class="fas fa-exchange ml-1 fa-xs"></i>
                 </button>
@@ -288,12 +426,20 @@
             <!-- Buttons -->
             <div class="flex justify-center space-x-4 mt-6">
                 <button id="bt-sync" type="button"
+<<<<<<< HEAD
                     class="bg-primary border border-primary py-3 px-7 hover:bg-primary text-lg text-white rounded-lg font-normal hover:bg-white hover:text-primary">
+=======
+                    class="bg-yellow py-4 px-8 hover:bg-primary text-lg hover:text-white rounded-lg">
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
                     Sync or Resync!
                     <i class="fas fa-sync ml-1 fa-xs"></i>
                 </button>
                 <button id="bt-abort" type="button"
+<<<<<<< HEAD
                     class="border border-primary hover:bg-primary text-lg py-3 px-7 rounded-lg text-primary font-normal hover:text-white">
+=======
+                    class="bg-orange hover:bg-primary text-lg text-white py-4 px-8 rounded-lg">
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
                     Abort!
                     <i class="fas fa-cut ml-1 fa-xs"></i>
                 </button>
@@ -340,6 +486,7 @@
 
 
     <!-- Footer -->
+<<<<<<< HEAD
     <footer class="lg:pt-10 lg:pb-6">
         <div class="lg:max-w mx-auto text-center">
             <img src="./logo.png" alt="Standfort Digital" class="w-60 mx-auto mb-10">
@@ -349,6 +496,16 @@
                         LAMIRAL</a></strong>
             </p>
             <p class="text-center text-base">Terms and conditions for anything: No limits to do anything with
+=======
+    <footer class="bg-gradient-to-b from-secondary to-primary lg:pt-10 lg:pb-6">
+        <div class="lg:max-w mx-auto text-center">
+            <img src="./logo.png" alt="Standfort Digital" class="w-60 mx-auto mb-10 bg-white rounded p-2">
+            <p class="text-center text-white mb-4">Feel free to contact
+                <strong><a href="https://imapsync.lamiral.info/#AUTHOR" target="_blank" class="underline">Gilles
+                        LAMIRAL</a></strong>
+            </p>
+            <p class="text-center text-base text-white">Terms and conditions for anything: No limits to do anything with
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
                 this work and this license!</p>
         </div>
     </footer>
@@ -382,4 +539,8 @@
     </script>
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> f327c8713159f0568c4a9d954fbce6ec9750dca4
