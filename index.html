@@ -101,11 +101,11 @@
 
     <div class="lg:max-w mx-auto">
         <div class="grid gap-12 lg:grid-cols-3 pt-4 pb-6">
-            <div class="shadow-xl rounded-lg bg-white flex flex-col p-8">
+            <div
+                class="shadow-xl rounded-lg bg-white flex flex-col p-8 border border-white hover:border-primary hover:scale-110 transition-all">
                 <div>
-                    <img src="./images/icon1.svg" alt="free of charge"
-                        class="w-14 h-14 mx-auto mb-4">
-                    <div class="text-xl font-semibold text-center mb-4">free of charge</div>
+                    <img src="./images/icon1.svg" alt="free of charge" class="w-14 h-14 mx-auto mb-4">
+                    <div class="text-xl font-semibold text-center mb-4 capitalize">free of charge</div>
                     <p class="text-center text-gray text-base">
                         Use our free mailsync online tool to transfer email mailboxes. The necessary traffic is also
                         included
@@ -113,11 +113,11 @@
                     </p>
                 </div>
             </div>
-            <div class="shadow-xl rounded-lg bg-white flex flex-col p-8">
+            <div
+                class="shadow-xl rounded-lg bg-white flex flex-col p-8 border border-white hover:border-primary hover:scale-110 transition-all">
                 <div>
-                    <img src="./images/icon2.svg" alt="save traffic"
-                        class="w-14 h-14 mx-auto mb-4">
-                    <div class="text-xl font-semibold text-center mb-4">save traffic</div>
+                    <img src="./images/icon2.svg" alt="save traffic" class="w-14 h-14 mx-auto mb-4">
+                    <div class="text-xl font-semibold text-center mb-4 capitalize">save traffic</div>
                     <p class="text-center text-gray text-base">
                         With one click, the tool copies all data between two IMAP servers. This will save you all the
                         traffic
@@ -125,11 +125,11 @@
                     </p>
                 </div>
             </div>
-            <div class="shadow-xl rounded-lg bg-white flex flex-col p-8">
+            <div
+                class="shadow-xl rounded-lg bg-white flex flex-col p-8 border border-white hover:border-primary hover:scale-110 transition-all">
                 <div>
-                    <img src="./images/icon3.svg" alt="worldwide"
-                        class="w-14 h-14 mx-auto mb-4">
-                    <div class="text-xl font-semibold text-center mb-4">worldwide</div>
+                    <img src="./images/icon3.svg" alt="worldwide" class="w-14 h-14 mx-auto mb-4">
+                    <div class="text-xl font-semibold text-center mb-4 capitalize">worldwide</div>
                     <p class="text-center text-gray text-base">
                         The tool works worldwide without restrictions, regardless of the location of the IMAP server.
                     </p>
@@ -293,56 +293,60 @@
 
 
             <!-- Checkboxes -->
-            <div class="flex items-center justify-center space-x-16 lg:mt-[200px]">
 
-                <label class="inline-flex items-center cursor-pointer" for="dry">
-                    <input type="checkbox" value="" class="sr-only peer" id="dry" name="dry">
-                    <div
-                        class="relative w-11 h-6 bg-lightGray peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-primary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
-                    </div>
-                    <span class="ms-3 text-sm">Just verbose, no real sync</span>
-                </label>
+            <div>
+                <div class="mb-6">
+                    <h4>Options:</h4>
+                </div>
+                <div class="flex items-center justify-start space-x-8">
+                    <label class="inline-flex items-center cursor-pointer" for="dry">
+                        <input type="checkbox" value="" class="sr-only peer" id="dry" name="dry">
+                        <div
+                            class="relative w-11 h-6 bg-lightGray peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-primary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
+                        </div>
+                        <span class="ms-3 text-sm">Just verbose, no real sync</span>
+                    </label>
 
-                <label class="inline-flex items-center cursor-pointer" for="justlogin">
-                    <input type="checkbox" value="" class="sr-only peer" id="justlogin" name="justlogin"
-                        data-toggle="tooltip" data-placement="bottom"
-                        title="Checks credentials without syncing anything.">
-                    <div
-                        class="relative w-11 h-6 bg-lightGray peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-primary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
-                    </div>
-                    <span class="ms-3 text-sm">Just checks credentials</span>
-                </label>
-
-
-                <label class="inline-flex items-center cursor-pointer" for="justfoldersizes">
-                    <input type="checkbox" value="" class="sr-only peer" id="justfoldersizes" name="justfoldersizes"
-                        data-toggle="tooltip" data-placement="bottom"
-                        title="Checks credentials without syncing anything.">
-                    <div
-                        class="relative w-11 h-6 bg-lightGray peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-primary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
-                    </div>
-                    <span class="ms-3 text-sm">Just presents folder sizes</span>
-                </label>
+                    <label class="inline-flex items-center cursor-pointer" for="justlogin">
+                        <input type="checkbox" value="" class="sr-only peer" id="justlogin" name="justlogin"
+                            data-toggle="tooltip" data-placement="bottom"
+                            title="Checks credentials without syncing anything.">
+                        <div
+                            class="relative w-11 h-6 bg-lightGray peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-primary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
+                        </div>
+                        <span class="ms-3 text-sm">Just checks credentials</span>
+                    </label>
 
 
-                <label class="inline-flex items-center cursor-pointer" for="justfolders">
-                    <input type="checkbox" value="" class="sr-only peer" id="justfolders" name="justfolders"
-                        data-toggle="tooltip" data-placement="bottom"
-                        title="Just create the folder hierarchy, messages are not synced.">
-                    <div
-                        class="relative w-11 h-6 bg-lightGray peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-primary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
-                    </div>
-                    <span class="ms-3 text-sm">Just create folders</span>
-                </label>
+                    <label class="inline-flex items-center cursor-pointer" for="justfoldersizes">
+                        <input type="checkbox" value="" class="sr-only peer" id="justfoldersizes" name="justfoldersizes"
+                            data-toggle="tooltip" data-placement="bottom"
+                            title="Checks credentials without syncing anything.">
+                        <div
+                            class="relative w-11 h-6 bg-lightGray peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-primary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
+                        </div>
+                        <span class="ms-3 text-sm">Just presents folder sizes</span>
+                    </label>
 
 
+                    <label class="inline-flex items-center cursor-pointer" for="justfolders">
+                        <input type="checkbox" value="" class="sr-only peer" id="justfolders" name="justfolders"
+                            data-toggle="tooltip" data-placement="bottom"
+                            title="Just create the folder hierarchy, messages are not synced.">
+                        <div
+                            class="relative w-11 h-6 bg-lightGray peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-primary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
+                        </div>
+                        <span class="ms-3 text-sm">Just create folders</span>
+                    </label>
+
+                </div>
             </div>
-            <p class="text-center text-base font-bold text-red-500">If you close this window (or tab) during the
+            <p class="text-left text-base font-bold text-red-500">If you close this window (or tab) during the
                 synchronization, it will abort the synchronization, it's like hitting the red button "Abort!" below.
             </p>
 
             <!-- Buttons -->
-            <div class="flex justify-center space-x-4 mt-6">
+            <div class="flex justify-start space-x-4 mt-6">
                 <button id="bt-sync" type="button"
                     class="bg-primary border border-primary py-3 px-7 hover:bg-primary text-lg text-white rounded-lg font-normal hover:bg-white hover:text-primary">
                     Sync or Resync!
