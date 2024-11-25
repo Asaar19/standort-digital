@@ -2,7 +2,7 @@
 
 <!-- $Id: imapsync_form_extra.html,v 1.28 2022/05/07 13:51:28 gilles Exp gilles $ -->
 
-<html lang="en" id="top">
+<html lang="en" id="top" class="scroll-smooth">
 
 
 <head>
@@ -76,7 +76,7 @@
 </head>
 
 <body class="bg-hero-pattern bg-cover bg-center bg-repeat font-inter">
-    <header class="absolute w-full">
+    <header class="absolute w-full" id="header">
         <div class="lg:max-w mx-auto py-4">
             <div class="flex flex-wrap justify-between items-center">
                 <!-- Left Column: Logo -->
@@ -84,9 +84,11 @@
                     <img src="./logo.png" alt="Standfort Digital" class="w-60">
                 </div>
                 <!-- Right Column: Two Divs -->
-                <div class="flex space-x-2 mt-2 md:mt-0 font-bold">
+                <div class="flex mt-2 md:mt-0 font-bold items-center">
                     <div class="">DE</div>
-                    <div class="">/ EN</div>
+                    <div class="ml-2">/ EN</div>
+                    <a href="#footer"
+                        class="ml-10 border py-2 px-5 text-xs rounded-full hover:bg-primary hover:text-white">Down</a>
                 </div>
             </div>
         </div>
@@ -159,11 +161,11 @@
                                         class="w-full p-3 placeholder:text-grey focus:none sm:text-sm/6 focus-visible:outline-none">
 
                                     <div class="relative group">
-                                        <button data-ripple-light="true"
+                                        <div data-ripple-light="true"
                                             class="select-none rounded-lg bg-gray-900 py-3 px-3 text-center align-middle   text-s font-bold uppercase text-white  transition-all   focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
                                             <i
                                                 class="fas fa-info-circle text-primary text-gray-500 ml-2 cursor-pointer"></i>
-                                        </button>
+                                        </div>
                                         <!-- Tooltip -->
                                         <div
                                             class="absolute hidden group-hover:block whitespace-nowrap top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-normal rounded-lg bg-primary p-2 text-xs font-normal text-white">
@@ -181,11 +183,11 @@
                                     <input type="password" id="password1" name="password1" placeholder="Enter password"
                                         class="w-full p-3 placeholder:text-grey focus:none sm:text-sm/6 focus-visible:outline-none">
                                     <div class="relative group">
-                                        <button data-ripple-light="true"
+                                        <div data-ripple-light="true"
                                             class="select-none rounded-lg bg-gray-900 py-3 px-3 text-center align-middle   text-s font-bold uppercase text-white  transition-all   focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
                                             <i
                                                 class="fas fa-info-circle text-primary text-gray-500 ml-2 cursor-pointer"></i>
-                                        </button>
+                                        </div>
                                         <!-- Tooltip -->
                                         <div
                                             class="absolute hidden group-hover:block whitespace-nowrap top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-normal rounded-lg bg-primary p-2 text-xs font-normal text-white">
@@ -210,11 +212,11 @@
 
 
                                     <div class="relative group">
-                                        <button data-ripple-light="true"
+                                        <div data-ripple-light="true"
                                             class="select-none rounded-lg bg-gray-900 py-3 px-3 text-center align-middle   text-s font-bold uppercase text-white  transition-all   focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
                                             <i
                                                 class="fas fa-info-circle text-primary text-gray-500 ml-2 cursor-pointer"></i>
-                                        </button>
+                                        </div>
                                         <!-- Tooltip -->
                                         <div
                                             class="absolute hidden group-hover:block whitespace-nowrap top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-normal rounded-lg bg-primary p-2 text-xs font-normal text-white">
@@ -232,15 +234,14 @@
 
                         <div class="subFolderDiv hidden">
                             <div class="mb-2 flex">
-
                                 <div class="relative group">
-                                    <button data-ripple-light="true"
+                                    <div data-ripple-light="true"
                                         class="select-none rounded-lg bg-gray-900 pr-3 text-center align-middle   text-s font-bold uppercase text-white  transition-all   focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
                                         <!-- <i class="fas fa-info-circle text-primary text-gray-500 ml-2 cursor-pointer"></i> -->
                                         <input data-toggle="tooltip" data-placement="bottom"
                                             title="Be careful with this option" type="checkbox" id="delete1"
                                             name="delete1">
-                                    </button>
+                                    </div>
                                     <!-- Tooltip -->
                                     <div
                                         class="absolute hidden group-hover:block whitespace-nowrap top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-normal rounded-lg bg-primary p-2 text-xs font-normal text-white">
@@ -264,11 +265,11 @@
                                             class="w-full p-3 placeholder:text-grey focus:none sm:text-sm/6 focus-visible:outline-none">
 
                                         <div class="relative group">
-                                            <button data-ripple-light="true"
-                                                class="select-none rounded-lg bg-gray-900 py-3 px-3 text-center align-middle   text-s font-bold uppercase text-white  transition-all   focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                                            <div data-ripple-light="true" type="nothing"
+                                                class="select-none rounded-lg bg-gray-900 py-3 px-3 text-center align-middle   text-s font-bold uppercase text-white  transition-all focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
                                                 <i
                                                     class="fas fa-info-circle text-primary text-gray-500 ml-2 cursor-pointer"></i>
-                                            </button>
+                                            </div>
                                             <!-- Tooltip -->
                                             <div
                                                 class="absolute hidden group-hover:block whitespace-nowrap top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-normal rounded-lg bg-primary p-2 text-xs font-normal text-white">
@@ -296,11 +297,11 @@
                                         class="w-full p-3 placeholder:text-grey focus:none sm:text-sm/6 focus-visible:outline-none">
 
                                     <div class="relative group">
-                                        <button data-ripple-light="true"
+                                        <div data-ripple-light="true"
                                             class="select-none rounded-lg bg-gray-900 py-3 px-3 text-center align-middle   text-s font-bold uppercase text-white  transition-all   focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
                                             <i
                                                 class="fas fa-info-circle text-primary text-gray-500 ml-2 cursor-pointer"></i>
-                                        </button>
+                                        </div>
                                         <!-- Tooltip -->
                                         <div
                                             class="absolute hidden group-hover:block whitespace-nowrap top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-normal rounded-lg bg-primary p-2 text-xs font-normal text-white">
@@ -318,11 +319,11 @@
                                         class="w-full p-3 placeholder:text-grey focus:none sm:text-sm/6 focus-visible:outline-none">
 
                                     <div class="relative group">
-                                        <button data-ripple-light="true"
+                                        <div data-ripple-light="true"
                                             class="select-none rounded-lg bg-gray-900 py-3 px-3 text-center align-middle   text-s font-bold uppercase text-white  transition-all   focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
                                             <i
                                                 class="fas fa-info-circle text-primary text-gray-500 ml-2 cursor-pointer"></i>
-                                        </button>
+                                        </div>
                                         <!-- Tooltip -->
                                         <div
                                             class="absolute hidden group-hover:block whitespace-nowrap top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-normal rounded-lg bg-primary p-2 text-xs font-normal text-white">
@@ -343,11 +344,11 @@
 
 
                                     <div class="relative group">
-                                        <button data-ripple-light="true"
+                                        <div data-ripple-light="true"
                                             class="select-none rounded-lg bg-gray-900 py-3 px-3 text-center align-middle   text-s font-bold uppercase text-white  transition-all   focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
                                             <i
                                                 class="fas fa-info-circle text-primary text-gray-500 ml-2 cursor-pointer"></i>
-                                        </button>
+                                        </div>
                                         <!-- Tooltip -->
                                         <div
                                             class="absolute hidden group-hover:block whitespace-nowrap top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-normal rounded-lg bg-primary p-2 text-xs font-normal text-white">
@@ -364,15 +365,13 @@
                         </div>
                         <div class="subFolderDiv hidden">
                             <div class="mb-2 flex">
-
                                 <div class="relative group">
-                                    <button data-ripple-light="true"
-                                        class="select-none rounded-lg bg-gray-900 pr-3 text-center align-middle   text-s font-bold uppercase text-white  transition-all   focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-                                        <!-- <i class="fas fa-info-circle text-primary text-gray-500 ml-2 cursor-pointer"></i> -->
+                                    <div data-ripple-light="true"
+                                        class="select-none rounded-lg bg-gray-900 pr-3 text-center align-middle text-s font-bold uppercase text-white  transition-all   focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ">
                                         <input data-toggle="tooltip" data-placement="bottom"
                                             title="Be careful with this option" type="checkbox" id="delete2"
                                             name="delete2">
-                                    </button>
+                                    </div>
                                     <!-- Tooltip -->
                                     <div
                                         class="absolute hidden group-hover:block whitespace-nowrap top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-normal rounded-lg bg-primary p-2 text-xs font-normal text-white">
@@ -393,11 +392,11 @@
                                             class="w-full p-3 placeholder:text-grey focus:none sm:text-sm/6 focus-visible:outline-none">
 
                                         <div class="relative group">
-                                            <button data-ripple-light="true"
+                                            <div data-ripple-light="true"
                                                 class="select-none rounded-lg bg-gray-900 py-3 px-3 text-center align-middle   text-s font-bold uppercase text-white  transition-all   focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
                                                 <i
                                                     class="fas fa-info-circle text-primary text-gray-500 ml-2 cursor-pointer"></i>
-                                            </button>
+                                            </div>
                                             <!-- Tooltip -->
                                             <div
                                                 class="absolute hidden group-hover:block whitespace-nowrap top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-normal rounded-lg bg-primary p-2 text-xs font-normal text-white">
@@ -431,67 +430,71 @@
                 <div class="flex items-center justify-start space-x-8">
                     <div class="relative group">
                         <label class="inline-flex items-center cursor-pointer" for="dry">
-                          <input type="checkbox" class="sr-only peer" id="dry" name="dry">
-                          <div
-                            class="relative w-11 h-6 bg-lightGray peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-primary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
-                          </div>
-                          <span class="ms-3 text-sm">Just verbose, no real sync</span>
+                            <input type="checkbox" class="sr-only peer" id="dry" name="dry">
+                            <div
+                                class="relative w-11 h-6 bg-lightGray peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-primary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
+                            </div>
+                            <span class="ms-3 text-sm">Just verbose, no real sync</span>
                         </label>
-                      
+
                         <!-- Tooltip -->
-                        <div class="absolute hidden group-hover:block top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-nowrap rounded-lg bg-primary py-1.5 px-2 text-xs font-normal text-white">
+                        <div
+                            class="absolute hidden group-hover:block top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-nowrap rounded-lg bg-primary py-1.5 px-2 text-xs font-normal text-white">
                             Shows what would be done without really doing it.
                         </div>
-                      </div>
+                    </div>
 
-                      <div class="relative group">
+                    <div class="relative group">
                         <label class="inline-flex items-center cursor-pointer" for="justlogin">
-                          <input type="checkbox" class="sr-only peer" id="justlogin" name="justlogin">
-                          <div
-                            class="relative w-11 h-6 bg-lightGray peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-primary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
-                          </div>
-                          <span class="ms-3 text-sm">Just checks credentials</span>
+                            <input type="checkbox" class="sr-only peer" id="justlogin" name="justlogin">
+                            <div
+                                class="relative w-11 h-6 bg-lightGray peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-primary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
+                            </div>
+                            <span class="ms-3 text-sm">Just checks credentials</span>
                         </label>
-                      
+
                         <!-- Tooltip -->
-                        <div class="absolute hidden group-hover:block top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-nowrap overflow-hidden rounded-lg bg-primary py-1.5 px-2 text-xs font-normal text-white">
-                          Checks credentials without syncing anything.
+                        <div
+                            class="absolute hidden group-hover:block top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-nowrap overflow-hidden rounded-lg bg-primary py-1.5 px-2 text-xs font-normal text-white">
+                            Checks credentials without syncing anything.
                         </div>
-                      </div>
+                    </div>
 
 
-                      <div class="relative group">
+                    <div class="relative group">
                         <label class="inline-flex items-center cursor-pointer" for="justfoldersizes">
-                          <input type="checkbox" class="sr-only peer" id="justfoldersizes" name="justfoldersizes">
-                          <div
-                            class="relative w-11 h-6 bg-lightGray peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-primary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
-                          </div>
-                          <span class="ms-3 text-sm">Just presents folder sizes</span>
+                            <input type="checkbox" class="sr-only peer" id="justfoldersizes" name="justfoldersizes">
+                            <div
+                                class="relative w-11 h-6 bg-lightGray peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-primary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
+                            </div>
+                            <span class="ms-3 text-sm">Just presents folder sizes</span>
                         </label>
-                      
+
                         <!-- Tooltip -->
-                        <div class="absolute hidden group-hover:block top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-nowrap overflow-hidden rounded-lg bg-primary py-1.5 px-2 text-xs font-normal text-white">
+                        <div
+                            class="absolute hidden group-hover:block top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-nowrap overflow-hidden rounded-lg bg-primary py-1.5 px-2 text-xs font-normal text-white">
                             Shows folders sizes and exits.
                         </div>
-                      </div>
+                    </div>
 
 
 
-                      <div class="relative group">
+                    <div class="relative group">
                         <label class="inline-flex items-center cursor-pointer" for="justfolders">
-                          <input type="checkbox" class="sr-only peer" id="justfolders" name="justfolders">
-                          <div
-                            class="relative w-11 h-6 bg-lightGray peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-primary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
-                          </div>
-                          <span class="ms-3 text-sm">Just create folders</span>
+                            <input type="checkbox" class="sr-only peer" id="justfolders" name="justfolders">
+                            <div
+                                class="relative w-11 h-6 bg-lightGray peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-primary after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary">
+                            </div>
+                            <span class="ms-3 text-sm">Just create folders</span>
                         </label>
-                      
+
                         <!-- Tooltip -->
-                        <div class="absolute hidden group-hover:block top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-nowrap overflow-hidden rounded-lg bg-primary py-1.5 px-2 text-xs font-normal text-white">
+                        <div
+                            class="absolute hidden group-hover:block top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-nowrap overflow-hidden rounded-lg bg-primary py-1.5 px-2 text-xs font-normal text-white">
                             Just create the folder hierarchy, messages are not synced.
                         </div>
-                      </div>
-                      
+                    </div>
+
                 </div>
             </div>
             <p class="text-left text-base font-bold text-red-500">If you close this window (or tab) during the
@@ -502,30 +505,35 @@
             <div class="flex justify-start space-x-4 mt-6">
 
                 <div class="relative group">
-                    <button id="bt-sync" type="button" class="bg-primary border border-primary py-3 px-7 hover:bg-primary text-lg text-white rounded-lg font-normal hover:bg-white hover:text-primary">
+                    <button id="bt-sync" type="button"
+                        class="bg-primary border border-primary py-3 px-7 hover:bg-primary text-lg text-white rounded-lg font-normal hover:bg-white hover:text-primary">
                         Sync or Resync!
                         <i class="fas fa-sync ml-1 fa-xs"></i>
                     </button>
-                
+
                     <!-- Tooltip -->
-                    <div class="absolute hidden group-hover:block top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-nowrap  overflow-hidden rounded-lg bg-primary py-1.5 px-2 text-xs font-normal text-white">
-                        Launch the sync! You can abort the sync with the red Abort button nearby or by closing the tab/window.
+                    <div
+                        class="absolute hidden group-hover:block top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-nowrap  overflow-hidden rounded-lg bg-primary py-1.5 px-2 text-xs font-normal text-white">
+                        Launch the sync! You can abort the sync with the red Abort button nearby or by closing the
+                        tab/window.
                     </div>
                 </div>
 
                 <div class="relative group">
 
 
-                <button id="bt-abort" type="button" class="border border-primary hover:bg-primary text-lg py-3 px-7 rounded-lg text-primary font-normal hover:text-white">
-                    Abort!
-                    <i class="fas fa-cut ml-1 fa-xs"></i>
-                </button>
+                    <button id="bt-abort" type="button"
+                        class="border border-primary hover:bg-primary text-lg py-3 px-7 rounded-lg text-primary font-normal hover:text-white">
+                        Abort!
+                        <i class="fas fa-cut ml-1 fa-xs"></i>
+                    </button>
 
-                 <!-- Tooltip -->
-                 <div class="absolute hidden group-hover:block top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-nowrap  overflow-hidden rounded-lg bg-primary py-1.5 px-2 text-xs font-normal text-white">
-                    Abort the sync! You can restart the sync later, no duplicates should happen.
+                    <!-- Tooltip -->
+                    <div
+                        class="absolute hidden group-hover:block top-full mt-2 left-1/2 transform -translate-x-1/2 z-50 whitespace-nowrap  overflow-hidden rounded-lg bg-primary py-1.5 px-2 text-xs font-normal text-white">
+                        Abort the sync! You can restart the sync later, no duplicates should happen.
+                    </div>
                 </div>
-            </div>
 
             </div>
 
@@ -586,7 +594,7 @@
 
 
     <!-- Footer -->
-    <footer class="lg:pt-10 lg:pb-6 bg-gradient-to-b from-lightGray to-white ">
+    <footer class="lg:pt-10 lg:pb-6 bg-gradient-to-b from-lightGray to-white" id="footer">
         <div class="lg:max-w mx-auto">
             <div class="flex items-center flex-wrap">
                 <div class="w-[30%] text-left">
@@ -599,9 +607,16 @@
                                 LAMIRAL</a></strong>
                     </p>
                 </div>
-                <div>
-                    <p class="text-center text-base">Terms and conditions for anything: No limits to do anything with
-                        this work and this license!</p>
+                <div class="flex justify-between w-full">
+                    <div>
+                        <p class="text-center text-base">Terms and conditions for anything: No limits to do anything
+                            with
+                            this work and this license!</p>
+                    </div>
+                    <div>
+                        <a href="#header"
+                            class="ml-10 border py-2 px-5 text-xs rounded-full hover:bg-primary hover:text-white">Up</a>
+                    </div>
                 </div>
                 <!-- <button type="button"
             class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Up</button> -->
